@@ -1,0 +1,25 @@
+.popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    bottom: 1rem;
+    right: 5rem;
+    background-color: rgba(16, 201, 32, 1);
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.219);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.219);
+}
+
+.popup.hide{
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.popup.error{
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+}
