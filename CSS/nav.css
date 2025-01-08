@@ -92,8 +92,9 @@ nav a:hover:after {
         align-items: center;
         justify-content: space-between;
     }
-
-    nav a:last-child{
-        margin-left: .5rem;
+    nav a {
+        padding-block: 0;
+        padding-right:.4rem;
+        padding-left:.4rem;
     }
 }

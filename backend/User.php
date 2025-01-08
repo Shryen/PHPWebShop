@@ -4,7 +4,6 @@ class User extends Database
 {
     public function AuthCheck()
     {
-        session_start();
         return isset($_SESSION['name']) ? true : false;
     }
     public function GetUser()

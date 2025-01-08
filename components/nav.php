@@ -23,5 +23,6 @@ $loggedIn = isset($_SESSION['name']) ? true : false;
             <a href="/login.php">Login</a>
             <a href="/register.php">Register</a>
         <?php endif; ?>
+        <?php require_once 'dropdown.php'; ?>
     </div>
 </nav>
