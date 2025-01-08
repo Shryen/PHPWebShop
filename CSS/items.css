@@ -10,6 +10,7 @@
     grid-gap: 1rem;
     margin: 0 auto;
 }
+
 .item-container img{
     max-width: 200px;
 }
@@ -36,5 +37,5 @@
     .container{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 3rem;
-    }
+    }   
 }

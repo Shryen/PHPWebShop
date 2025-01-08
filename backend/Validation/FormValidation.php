@@ -66,6 +66,20 @@ class Validation
         }
     }
 
+    public function validateAlphabetic(string $field): void
+    {
+        if (!ctype_alpha($this->data[$field])) {
+            $this->addError($field, "{$field} must contain only alphabetic characters.");
+        }
+    }
+
+    public function validatePasswordMatches(string $password, string $passwordMatch): void
+    {
+        if ($this->data[$password] !== $this->data[$passwordMatch]) {
+            $this->addError($password, "Passwords do not match.");
+        }
+    }
+
     public function hasErrors(): bool
     {
         return !empty($this->errors);

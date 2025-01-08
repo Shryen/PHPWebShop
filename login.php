@@ -8,16 +8,6 @@ require_once 'components/header.php';
 ?>
 
 <body>
-    <?php
-    if (isset($_GET["error"])) {
-        $errors = json_decode(urldecode($_GET["error"]), true);
-        if (is_array($errors)) {
-            foreach ($errors as $error) {
-                echo "<p class='error'>$error</p>";
-            }
-        }
-    }
-    ?>
     <form action="backend/login.php" method="post" enctype="multipart/form-data" class="auth-form">
         <h1 id="form-header">Login</h1>
         <label for="name">Username</label>
@@ -26,6 +16,7 @@ require_once 'components/header.php';
         <input type="password" name="password" id="password">
         <input type="submit" value="Login" name="submit">
     </form>
+    <?php require_once 'components/popup.php'; ?>
 
 </body>
 
